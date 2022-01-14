@@ -1,0 +1,40 @@
+.portfolio {
+    &__container {}
+}
+
+.main-inform {
+    &__sub-title {}
+}
+
+.swiper-container {}
+
+.my-works {
+    &__container {
+        min-width: 0px;
+    }
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-button-prev {}
+
+.my-work {
+    &__link {}
+    &__img {}
+    &__description {}
+}
+
+.swiper-button-next {}
+
+.swiper-container {}
+
+.swiper-slide {
+    min-width: 700px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

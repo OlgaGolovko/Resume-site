@@ -1,0 +1,503 @@
+@import "nullstyle.scss";
+$mainTitleHeight: 300px;
+$mainTitleHeight2: 425px;
+$mainTitleHeight3: 567px;
+$color_1: #021d90;
+$color_2: #93b93c;
+$color_3: #346b66;
+$color_4: #d6eaf6;
+@font-face {
+    font-family: "Halo Handletter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/HaloHandletter.ttf");
+}
+
+html body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: $color_4;
+    background-color: $color_4;
+    font-size: 14px;
+    line-height: 24px;
+    @media (minWidth: 479.98px) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    @media (min-width: 991.98px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @media (min-width: 1212px) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.main {
+    background-color: $color_4;
+}
+
+h1 {
+    font-family: "Halo Handletter";
+    color: $color_1;
+    letter-spacing: 0.1em;
+    font-size: 40px;
+    line-height: 50px;
+    @media (min-width: 320px) {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    @media (min-width: 479.98px) {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    @media (min-width: 991.98px) {
+        // font-size: 80px;
+        // line-height: 90px;
+    }
+    @media (min-width: 1212px) {
+        font-size: 90px;
+        line-height: 100px;
+    }
+}
+
+h2 {
+    color: $color_1;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    span {
+        font-weight: 400;
+    }
+    @media (min-width: 320px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    @media (min-width: 479.98px) {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    @media (min-width: 991.98px) {
+        // font-size: 26px;
+        // line-height: 26px;
+    }
+    @media (min-width: 1212px) {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+
+h3 {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    color: $color_4;
+    @media (min-width: 479.98px) {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    @media (min-width: 767.98px) {
+        font-size: 22px;
+        line-height: 44px;
+    }
+    @media (min-width: 991.98px) {
+        // font-size: 24px;
+        // line-height: 48px;
+    }
+    @media (min-width: 1212px) {
+        font-size: 26px;
+        line-height: 52px;
+    }
+}
+
+.main-inform {
+    &__container {
+        padding: 5%;
+        margin: 0 auto;
+    }
+    &__title-container {
+        background-color: $color_2;
+        box-sizing: border-box;
+        // box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: $mainTitleHeight;
+        padding: 5% 0% 5% 0%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        @media (min-width: 479.98px) {
+            height: $mainTitleHeight2;
+        }
+        @media (min-width: 767.98px) {}
+        @media (min-width: 991.98px) {}
+        @media (min-width: 1212px) {
+            height: $mainTitleHeight3;
+            margin: 7% 0% 0% 0%;
+            padding: 3% 5% 5% 0%;
+            padding-left: 600px;
+            // padding: 0% 0% 0% 15%;
+            // padding: 800px ;
+        }
+        @media (min-width: 1888px) {
+            padding-left: 800px;
+        }
+    }
+    &__content-container {
+        margin: 20px;
+        @media (min-width: 991.98px) {
+            margin-top: $mainTitleHeight2;
+            margin-bottom: 0px;
+            margin-left: 500px;
+        }
+        @media (min-width: 1212px) {
+            margin-top: $mainTitleHeight3 + 100px;
+        }
+        @media (min-width: 1888px) {
+            margin-left: 800px;
+        }
+    }
+    &__about-me-container {
+        p {
+            color: #ffffff;
+            padding: 20px;
+        }
+    }
+    &__sub-title {
+        background-color: $color_3;
+        text-align: center;
+        margin: 20px 0px;
+    }
+}
+
+.title {
+    &__logo {
+        font-family: "Halo Handletter";
+        font-weight: 400;
+        text-align: center;
+        color: $color_1;
+        border: 1px solid $color_1;
+        border-radius: 50%;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 25px;
+        line-height: 60px;
+        width: 50px;
+        height: 50px;
+        margin: 20px 0px;
+        @media (min-width: 479.98px) {}
+        @media (min-width: 767.98px) {
+            font-size: 30px;
+            line-height: 50px;
+            width: 65px;
+            height: 65px;
+            padding-top: 12px;
+        }
+        @media (min-width: 991.98px) {
+            font-size: 35px;
+            line-height: 55px;
+            width: 75px;
+            height: 75px;
+            padding-top: 15px;
+            margin: 30px 0px;
+        }
+        @media (min-width: 1212px) {
+            font-size: 55px;
+            line-height: 85px;
+            width: 110px;
+            height: 110px;
+            padding-top: 20px;
+            margin: 40px 0px;
+        }
+        @media (min-width: 1888px) {
+            margin: 40px 0px;
+        }
+    }
+    &__name {}
+    &__profession {
+        padding: 10px 0px 0px 0px;
+    }
+}
+
+.portfolio {
+    &__container {}
+}
+
+.my-works {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        max-height: 1300px;
+        overflow-y: scroll;
+    }
+    &__links-container {}
+    &__link {
+        background-color: $color_3;
+        border: 2px solid $color_3;
+        text-align: center;
+        margin: 40px 10px 60px 10px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        padding: 0px 10px;
+        @media (min-width: 479.98px) {
+            font-size: 20px;
+            line-height: 40px;
+        }
+        @media (min-width: 767.98px) {
+            font-size: 22px;
+            line-height: 44px;
+        }
+        @media (min-width: 991.98px) {
+            // font-size: 24px;
+            // line-height: 48px;
+        }
+        @media (min-width: 1212px) {
+            font-size: 26px;
+            line-height: 52px;
+        }
+        a {
+            color: $color_4;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: $color_4;
+                text-decoration-style: solid;
+            }
+        }
+    }
+}
+
+.my-work {
+    max-width: 280px;
+    height: auto;
+    margin: 40px 0px 0px 0px;
+    @media (min-width: 479.98px) {
+        max-width: 400px;
+    }
+    @media (min-width: 767.98px) {
+        max-width: 600px;
+    }
+    @media (min-width: 991.98px) {
+        width: 300px;
+        margin: 80px 0px 0px 0px;
+    }
+    @media (min-width: 1212px) {
+        width: 900px;
+    }
+    &__link {
+        color: #ffffff;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0px 0px;
+    }
+    &__description {
+        background-color: $color_3;
+        text-align: left;
+        padding: 15px;
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+.sidebar {
+    &__container {
+        background-color: $color_3;
+        max-width: 100%;
+        min-height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        box-sizing: content-box;
+        padding: 8% 3% 15% 3%;
+        margin-top: $mainTitleHeight;
+        @media (min-width: 479.98px) {
+            margin-top: $mainTitleHeight2;
+        }
+        @media (min-width: 767.98px) {}
+        @media (min-width: 991.98px) {
+            margin-right: 40px;
+            max-width: 500px;
+            position: relative;
+            float: left;
+            z-index: 10;
+        }
+        @media (min-width: 1212px) {
+            margin: 0% 5% 0% 2%;
+        }
+        @media (min-width: 1888px) {
+            margin: 0% 5% 0% 7%;
+        }
+        span {
+            font-weight: 400;
+        }
+        p {
+            font-weight: 700;
+        }
+    }
+    &__elements-container {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    &__photo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid $color_4;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+        border-radius: 15% 0% 15% 0%;
+        overflow: hidden;
+        margin: 60px 0px;
+        width: 200px;
+        height: 200px;
+        @media (min-width: 479.98px) {
+            width: 250px;
+            height: 250px;
+        }
+        @media (min-width: 767.98px) {}
+        @media (min-width: 991.98px) {}
+        @media (min-width: 1212px) {
+            margin: 100px 0 170px 0;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    &__my-photo {
+        max-width: 350px;
+        max-height: 350px;
+        -webkit-transform: rotateZ(315deg) scale(1.5);
+        transform: rotateZ(45deg) scale(1.5);
+        border-radius: 15% 0% 15% 0%;
+        display: block;
+        -webkit-object-fit: cover;
+        object-fit: cover;
+        padding: 0px 15px 50px 15px;
+        @media (min-width: 320px) {}
+        @media (min-width: 479.98px) {}
+        @media (min-width: 767.98px) {}
+        @media (min-width: 991.98px) {}
+        @media (min-width: 1212px) {
+            max-width: 450px;
+            max-height: 450px;
+            padding: 0px 25px 75px 0px;
+        }
+    }
+    &__title {
+        background-color: $color_2;
+        border-radius: 2px;
+        text-align: center;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        width: 100%;
+        @media (min-width: 479.98px) {}
+        @media (min-width: 767.98px) {}
+        @media (min-width: 991.98px) {}
+        @media (min-width: 1212px) {}
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__ul {}
+    &__li {
+        white-space: nowrap;
+    }
+    &__sub-list {
+        li {
+            list-style: disc;
+            margin-left: 50px;
+            text-align: left;
+            list-style-position: inside;
+        }
+    }
+    &__sub-element {}
+}
+
+.contact {
+    &__logo {
+        background-color: $color_2;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        width: 45px;
+        height: 45px;
+        @media (min-width: 991.98px) {
+            width: 65px;
+            height: 65px;
+        }
+    }
+    &__phone {
+        width: 18px;
+        height: 32px;
+        @media (min-width: 991.98px) {
+            width: 28px;
+            height: 45px;
+        }
+    }
+    &__internet {
+        width: 35px;
+        height: 35px;
+        @media (min-width: 991.98px) {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    &__adress {
+        width: 17px;
+        height: 30px;
+        @media (min-width: 991.98px) {
+            width: 27px;
+            height: 42px;
+        }
+    }
+    &__link {
+        color: $color_4;
+        letter-spacing: normal;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
