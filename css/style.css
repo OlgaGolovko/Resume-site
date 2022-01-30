@@ -165,6 +165,22 @@ h3 {
       font-size: 26px;
       line-height: 52px; } }
 
+._anim-show {
+  -webkit-transform: translate(0px, 120%);
+  -ms-transform: translate(0px, 120%);
+  transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s; }
+
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px); }
+
 .main-inform__container {
   padding: 5%;
   margin: 0 auto; }
